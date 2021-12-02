@@ -1,10 +1,9 @@
 //: [Previous](@previous)
 
 import Foundation
-import AWSCognitoIdentity
-import AWSCognitoIdentityProvider
+import AWSAppSync
 import PlayingWithAWS
 
-print("Auth")
+print("DataStore")
 
 //: [Next](@next)

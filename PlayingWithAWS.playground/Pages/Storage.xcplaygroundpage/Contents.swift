@@ -4,6 +4,17 @@ import Foundation
 import AWSS3
 import PlayingWithAWS
 
-let bucketList = try S3BucketList()
+print("Storage")
+
+do {
+    let bucketList = try S3BucketList()
+    let buckets = try bucketList.buckets()
+    for bucket in buckets {
+        print("Bucket: \(bucket)")
+    }
+}
+catch {
+    print("Error: \(error)")
+}
 
 //: [Next](@next)

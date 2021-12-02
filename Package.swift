@@ -12,14 +12,14 @@ let package = Package(
     products: [
         .library(
             name: "PlayingWithAWS",
-            targets: ["PlayingWithAWS"]),
+            targets: ["PlayingWithAWS"])
     ],
     dependencies: [
         .package(
             name: "AWSSwiftSDK",
             url: "https://github.com/awslabs/aws-sdk-swift",
-            from: "0.0.16"
-        ),
+            from: "0.1.0"
+        )
     ],
     targets: [
         .target(
@@ -28,9 +28,13 @@ let package = Package(
                 .product(name: "AWSCognitoIdentity", package: "AWSSwiftSDK"),
                 .product(name: "AWSCognitoIdentityProvider", package: "AWSSwiftSDK"),
                 .product(name: "AWSS3", package: "AWSSwiftSDK"),
+                .product(name: "AWSAppSync", package: "AWSSwiftSDK"),
+                .product(name: "AWSPinpoint", package: "AWSSwiftSDK"),
+                .product(name: "AWSPolly", package: "AWSSwiftSDK"),
+                .product(name: "AWSLocation", package: "AWSSwiftSDK")
             ]),
         .testTarget(
             name: "PlayingWithAWSTests",
-            dependencies: ["PlayingWithAWS"]),
+            dependencies: ["PlayingWithAWS"])
     ]
 )

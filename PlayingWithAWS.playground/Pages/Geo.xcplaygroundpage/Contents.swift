@@ -1,10 +1,9 @@
 //: [Previous](@previous)
 
 import Foundation
-import AWSCognitoIdentity
-import AWSCognitoIdentityProvider
+import AWSLocation
 import PlayingWithAWS
 
-print("Auth")
+print("Geo")
 
 //: [Next](@next)

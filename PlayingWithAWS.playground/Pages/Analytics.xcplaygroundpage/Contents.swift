@@ -1,10 +1,9 @@
 //: [Previous](@previous)
 
 import Foundation
-import AWSCognitoIdentity
-import AWSCognitoIdentityProvider
+import AWSPinpoint
 import PlayingWithAWS
 
-print("Auth")
+print("Analytics")
 
 //: [Next](@next)
